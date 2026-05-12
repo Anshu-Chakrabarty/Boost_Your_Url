@@ -2582,7 +2582,7 @@
                             </div>
                             <div class="form-row">
                                 <label for="hf-phone">Phone *</label>
-                                <input type="tel" id="hf-phone" name="phone" placeholder="+1 (555) 000-0000" required/>
+                                <input type="tel" id="hf-phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel-national" maxlength="14" required/>
                                 <span class="err-msg" id="hf-phone-err">Required.</span>
                             </div>
                         </div>
@@ -2988,7 +2988,7 @@
                         <div class="form-row"><label for="cf_email">Business Email *</label><input type="email" id="cf_email" name="email" placeholder="jane@yourcompany.com" autocomplete="email" required/><span class="err-msg" id="cf_email_err">Please use your business email address.</span>
                             <div class="biz-email-note"><svg><use href="#i-building"/></svg>We only accept business email addresses</div>
                         </div>
-                        <div class="form-row"><label for="cf_phone">Phone Number *</label><input type="tel" id="cf_phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel" required/><span class="err-msg" id="cf_phone_err">Please enter a valid phone number (min 10 digits).</span></div>
+                        <div class="form-row"><label for="cf_phone">Phone Number *</label><input type="tel" id="cf_phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel-national" maxlength="14" required/><span class="err-msg" id="cf_phone_err">Please enter a valid phone number.</span></div>
                         <div class="form-row"><label for="cf_company">Company Name</label><input type="text" id="cf_company" name="company" placeholder="Acme Inc." autocomplete="organization" /></div>
                         <div class="form-row"><label for="cf_service">Service of Interest</label><select id="cf_service" name="service"><option value="">Select a service…</option><option>Social Media Marketing</option><option>Search Engine Marketing</option><option>Reputation Management</option><option>SEO</option><option>AEO SEO</option><option>Website Development &amp; Hosting</option><option>Review Management</option><option>Multiple Services / Not Sure</option></select></div>
                         <div class="form-row"><label for="cf_msg">How Can We Help? *</label><textarea id="cf_msg" name="message" placeholder="Tell us about your business, goals, and any current challenges…" required></textarea><span class="err-msg" id="cf_msg_err">Please describe how we can help.</span></div>
@@ -3001,9 +3001,6 @@
     </main>
 
     <!-- ═══ SERVICE PAGES ═══ -->
-
-    <!-- helper macro: svc lead form -->
-    <!-- Each service page has: breadcrumb, ph hero, detail+sidebar (stats card + lead form), cta block -->
 
     <!-- SMM -->
     <main id="page-smm" class="page">
@@ -3036,7 +3033,7 @@
                         <p class="ph-form-sub">Find out exactly where your brand is leaving growth on the table.</p>
                         <div class="form-2col">
                             <div class="form-row"><label>First Name *</label><input type="text" id="smm-form-name" name="name" placeholder="Jane" required/><span class="err-msg" id="smm-name-err">Required.</span></div>
-                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="smm-phone" placeholder="+1 (555) 000-0000" required/><span class="err-msg" id="smm-phone-err">Required.</span></div>
+                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="smm-phone" placeholder="(555) 000-0000" autocomplete="tel-national" maxlength="14" required/><span class="err-msg" id="smm-phone-err">Required.</span></div>
                         </div>
                         <div class="form-row"><label>Business Email *</label><input type="email" name="email" id="smm-email" placeholder="jane@yourcompany.com" required/><span class="err-msg" id="smm-email-err">Please use your business email.</span>
                             <div class="biz-email-note"><svg><use href="#i-building"/></svg>Business email only — no Gmail/Yahoo</div>
@@ -3093,7 +3090,6 @@
                             <div class="lbl">Paid social ROAS delivered</div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -3137,7 +3133,7 @@
                         <p class="ph-form-sub">We'll audit your campaigns for free and show you exactly where money is being lost.</p>
                         <div class="form-2col">
                             <div class="form-row"><label>First Name *</label><input type="text" id="sem-form-name" name="name" placeholder="Jane" required/><span class="err-msg" id="sem-name-err">Required.</span></div>
-                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="sem-phone" placeholder="+1 (555) 000-0000" required/><span class="err-msg" id="sem-phone-err">Required.</span></div>
+                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="sem-phone" placeholder="(555) 000-0000" autocomplete="tel-national" maxlength="14" required/><span class="err-msg" id="sem-phone-err">Required.</span></div>
                         </div>
                         <div class="form-row"><label>Business Email *</label><input type="email" name="email" id="sem-email" placeholder="jane@yourcompany.com" required/><span class="err-msg" id="sem-email-err">Please use your business email.</span>
                             <div class="biz-email-note"><svg><use href="#i-building"/></svg>Business email only — no Gmail/Yahoo</div>
@@ -3184,7 +3180,6 @@
                             <div class="lbl">Conversion rate improvement</div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -3227,7 +3222,7 @@
                         <p class="ph-form-sub">We'll show you exactly what customers see when they search your brand online.</p>
                         <div class="form-2col">
                             <div class="form-row"><label>First Name *</label><input type="text" id="rep-form-name" name="name" placeholder="Jane" required/><span class="err-msg" id="rep-name-err">Required.</span></div>
-                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="rep-phone" placeholder="+1 (555) 000-0000" required/><span class="err-msg" id="rep-phone-err">Required.</span></div>
+                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="rep-phone" placeholder="(555) 000-0000" autocomplete="tel-national" maxlength="14" required/><span class="err-msg" id="rep-phone-err">Required.</span></div>
                         </div>
                         <div class="form-row"><label>Business Email *</label><input type="email" name="email" id="rep-email" placeholder="jane@yourcompany.com" required/><span class="err-msg" id="rep-email-err">Please use your business email.</span>
                             <div class="biz-email-note"><svg><use href="#i-building"/></svg>Business email only — no Gmail/Yahoo</div>
@@ -3274,7 +3269,6 @@
                             <div class="lbl">Alert response time</div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -3318,7 +3312,7 @@
                         <p class="ph-form-sub">We'll show you the fastest opportunities to grow your organic traffic.</p>
                         <div class="form-2col">
                             <div class="form-row"><label>First Name *</label><input type="text" id="seo-form-name" name="name" placeholder="Jane" required/><span class="err-msg" id="seo-name-err">Required.</span></div>
-                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="seo-phone" placeholder="+1 (555) 000-0000" required/><span class="err-msg" id="seo-phone-err">Required.</span></div>
+                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="seo-phone" placeholder="(555) 000-0000" autocomplete="tel-national" maxlength="14" required/><span class="err-msg" id="seo-phone-err">Required.</span></div>
                         </div>
                         <div class="form-row"><label>Business Email *</label><input type="email" name="email" id="seo-email" placeholder="jane@yourcompany.com" required/><span class="err-msg" id="seo-email-err">Please use your business email.</span>
                             <div class="biz-email-note"><svg><use href="#i-building"/></svg>Business email only — no Gmail/Yahoo</div>
@@ -3365,7 +3359,6 @@
                             <div class="lbl">Time to first meaningful ranking gains</div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -3409,7 +3402,7 @@
                         <p class="ph-form-sub">Find out if AI is citing your brand — and what it takes to dominate AI search results.</p>
                         <div class="form-2col">
                             <div class="form-row"><label>First Name *</label><input type="text" id="aeo-form-name" name="name" placeholder="Jane" required/><span class="err-msg" id="aeo-name-err">Required.</span></div>
-                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="aeo-phone" placeholder="+1 (555) 000-0000" required/><span class="err-msg" id="aeo-phone-err">Required.</span></div>
+                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="aeo-phone" placeholder="(555) 000-0000" autocomplete="tel-national" maxlength="14" required/><span class="err-msg" id="aeo-phone-err">Required.</span></div>
                         </div>
                         <div class="form-row"><label>Business Email *</label><input type="email" name="email" id="aeo-email" placeholder="jane@yourcompany.com" required/><span class="err-msg" id="aeo-email-err">Please use your business email.</span>
                             <div class="biz-email-note"><svg><use href="#i-building"/></svg>Business email only — no Gmail/Yahoo</div>
@@ -3457,7 +3450,6 @@
                             <div class="lbl">Best time to build AEO authority</div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -3501,7 +3493,7 @@
                         <p class="ph-form-sub">We'll audit your site's speed, SEO, and conversion potential — completely free.</p>
                         <div class="form-2col">
                             <div class="form-row"><label>First Name *</label><input type="text" id="web-form-name" name="name" placeholder="Jane" required/><span class="err-msg" id="web-name-err">Required.</span></div>
-                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="web-phone" placeholder="+1 (555) 000-0000" required/><span class="err-msg" id="web-phone-err">Required.</span></div>
+                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="web-phone" placeholder="(555) 000-0000" autocomplete="tel-national" maxlength="14" required/><span class="err-msg" id="web-phone-err">Required.</span></div>
                         </div>
                         <div class="form-row"><label>Business Email *</label><input type="email" name="email" id="web-email" placeholder="jane@yourcompany.com" required/><span class="err-msg" id="web-email-err">Please use your business email.</span>
                             <div class="biz-email-note"><svg><use href="#i-building"/></svg>Business email only — no Gmail/Yahoo</div>
@@ -3554,7 +3546,6 @@
                             <div class="lbl">Hosting uptime SLA</div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -3598,7 +3589,7 @@
                         <p class="ph-form-sub">We'll show your current review landscape and the fastest path to a higher star rating.</p>
                         <div class="form-2col">
                             <div class="form-row"><label>First Name *</label><input type="text" id="rev-form-name" name="name" placeholder="Jane" required/><span class="err-msg" id="rev-name-err">Required.</span></div>
-                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="rev-phone" placeholder="+1 (555) 000-0000" required/><span class="err-msg" id="rev-phone-err">Required.</span></div>
+                            <div class="form-row"><label>Phone *</label><input type="tel" name="phone" id="rev-phone" placeholder="(555) 000-0000" autocomplete="tel-national" maxlength="14" required/><span class="err-msg" id="rev-phone-err">Required.</span></div>
                         </div>
                         <div class="form-row"><label>Business Email *</label><input type="email" name="email" id="rev-email" placeholder="jane@yourcompany.com" required/><span class="err-msg" id="rev-email-err">Please use your business email.</span>
                             <div class="biz-email-note"><svg><use href="#i-building"/></svg>Business email only — no Gmail/Yahoo</div>
@@ -3653,7 +3644,6 @@
                             <div class="lbl">More reviews generated with our SMS campaigns</div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -3710,6 +3700,41 @@
     </footer>
 
     <script>
+        /* ─── US PHONE MASK ─── */
+        // Formats input as (###) ###-#### as the user types
+        function applyPhoneMask(el) {
+            el.addEventListener('input', function() {
+                let digits = this.value.replace(/\D/g, '').slice(0, 10);
+                let formatted = '';
+                if (digits.length === 0) {
+                    formatted = '';
+                } else if (digits.length <= 3) {
+                    formatted = '(' + digits;
+                } else if (digits.length <= 6) {
+                    formatted = '(' + digits.slice(0, 3) + ') ' + digits.slice(3);
+                } else {
+                    formatted = '(' + digits.slice(0, 3) + ') ' + digits.slice(3, 6) + '-' + digits.slice(6);
+                }
+                this.value = formatted;
+            });
+        }
+
+        // Apply mask to all phone inputs on load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('input[type="tel"]').forEach(applyPhoneMask);
+        });
+
+        /* ─── THANK-YOU URL REDIRECT ─── */
+        // Called on every successful form submission to push /thank-you to the URL bar
+        function redirectToThankYou() {
+            history.pushState({
+                page: 'thank-you'
+            }, '', '/thank-you');
+            document.title = 'Thank You | BoostYourURL';
+            const canonical = document.getElementById('canonical-tag');
+            if (canonical) canonical.href = window.location.origin + '/thank-you';
+        }
+
         /* ─── HOME HERO FORM ─── */
         function submitHeroForm(e) {
             e.preventDefault();
@@ -3752,6 +3777,7 @@
             // Replace: fetch('/api/leads',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
             F('home-hero-form').style.display = 'none';
             F('home-hero-success').style.display = 'block';
+            redirectToThankYou();
         }
 
 
@@ -3795,6 +3821,7 @@
             'aeo-seo': 'aeo',
             'website-development-hosting': 'webdev',
             'review-management': 'reviews',
+            'thank-you': 'home', // thank-you slug resolves to home page content (success state shown in form)
         };
         const SLUGS = {
             home: '',
@@ -3905,7 +3932,6 @@
         }
 
         /* ─── BUSINESS EMAIL VALIDATION ─── */
-        // Comprehensive list of free/consumer email providers to block
         const FREE_DOMAINS = new Set([
             'gmail.com', 'googlemail.com', 'yahoo.com', 'yahoo.co.uk', 'yahoo.com.au', 'yahoo.ca',
             'yahoo.fr', 'yahoo.de', 'yahoo.it', 'yahoo.es', 'yahoo.co.in', 'yahoo.co.jp',
@@ -3949,7 +3975,6 @@
             if (!email || !email.includes('@')) return false;
             const domain = email.split('@')[1].toLowerCase().trim();
             if (FREE_DOMAINS.has(domain)) return false;
-            // block obvious temp/disposable patterns
             if (/\d{6,}/.test(domain)) return false;
             if (/(temp|trash|spam|disposable|fake|junk|test\d)/i.test(domain)) return false;
             return true;
@@ -4006,6 +4031,7 @@
             // Replace: fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
             document.getElementById(fid).style.display = 'none';
             document.getElementById(sid).style.display = 'block';
+            redirectToThankYou();
         }
 
         /* ─── SERVICE FORMS ─── */
@@ -4102,6 +4128,7 @@
             // Replace: fetch('/api/leads',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
             form.style.display = 'none';
             document.getElementById(sid).style.display = 'block';
+            redirectToThankYou();
         }
 
         // Live error clearing
@@ -4110,7 +4137,6 @@
                 this.classList.remove('err');
                 const er = document.getElementById(this.id + '_err');
                 if (er) er.classList.remove('show');
-                // also clear by name-based err spans in svc forms
                 if (this.name === 'email') {
                     const form = this.closest('form');
                     if (form) {
